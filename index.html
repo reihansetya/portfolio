@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project akhir Dicoding</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="kiri">
+                <a href="#">Han's Tech</a>
+            </div>
+            <div class="kanan">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Me</a>
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+    <!-- end header -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron">
+        <div class="jumb-txt">
+            <h2>Selamat Datang Di web portfolio saya</h2>
+            <h3>Melayani jasa pembuatan website sesuai permintaan</h3>
+            <p><span id="typed" class="typed"></span></p>
+            <a href="#">Start</a>
+        </div>
+    </div>
+    <!-- end jumbotron -->
+
+    <!-- main -->
+    <div class="container">
+        <main>
+            <!-- aside  -->
+            <aside id="about">
+                <div class="aside-kiri">
+                    <h2>About Me</h2>
+                    <img src="./img/about me.jpg" alt="aboutme">
+                </div>
+                <div class="aside-kanan">
+                    <h2>About Me</h2>
+                    <p>Nama Saya Reihan Setya Abida, saya adalah seorang Front-End Web Developer, saya menggunakan HTML,
+                        CSS, dan Javascript untuk membuat website, bertempat tinggal di Jakarta Selatan, saya menempuh
+                        pendidikan S1 jurusan teknik Informatika di Universitas Mercubuana, Jakarta Barat</p>
+                </div>
+            </aside>
+            <!-- article -->
+            <article id="skills">
+                <h2>Skills</h2>
+                <div class="buttons">
+                    <span class="btn" onclick="opentag('Front')">Front-End</span>
+                    <span class="btn" onclick="opentag('Back')">Back-End</span>
+                    <span class="btn" onclick="opentag('framework')">FrameWork</span>
+                </div>
+                <div id="Front" class="tag btn-isi" style="display: none">
+                    <div class="card">
+                        <img src="./img/html.png" alt="html">
+                        <hr>
+                        <p>HTML</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/css.png" alt="css">
+                        <hr>
+                        <p>CSS</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/js.png" alt="js">
+                        <hr>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div id="Back" class="tag btn-isi" style="display:none">
+                    <div class="card">
+                        <img src="./img/php.png" alt="php">
+                        <hr>
+                        <p>PHP</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/node.png" alt="nodejs">
+                        <hr>
+                        <p>NodeJs</p>
+                    </div>
+                </div>
+                <div id="framework" class="tag btn-isi" style="display:none">
+                    <div class="card">
+                        <img src="./img/boots.png" alt="bootstrap">
+                        <hr>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/react.png" alt="reactjs">
+                        <hr>
+                        <p>ReactJs</p>
+                    </div>
+                </div>
+            </article>
+            <!-- services -->
+            <div class="services" id="services">
+                <h2>Services</h2>
+                <div class="serv satu">
+                    <div class="serv-txt">
+                        <h3>Responsive Website</h3>
+                        <img src="./img/service1.svg" alt="service1" class="serv-mobile">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat tempora consequuntur
+                            aliquid quibusdam. Omnis corporis sequi totam, doloribus eaque ipsum maiores aspernatur
+                            quibusdam, obcaecati suscipit, veniam perspiciatis facere consequuntur?</p>
+                    </div>
+                    <img src="./img/service1.svg" alt="service1" class="serv-img">
+                </div>
+                <div class="serv">
+                    <img src="./img/service2.svg" alt="service1" class="serv-img">
+                    <div class="serv-txt dua">
+                        <h3>Pengerjaan Cepat dan Efisien</h3>
+                        <img src="./img/service2.svg" alt="service1" class="serv-mobile">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat tempora consequuntur
+                            aliquid quibusdam. Omnis corporis sequi totam, doloribus eaque ipsum maiores aspernatur
+                            quibusdam, obcaecati suscipit, veniam perspiciatis facere consequuntur?</p>
+                    </div>
+                </div>
+                <div class="serv tiga">
+                    <div class="serv-txt">
+                        <h3>Tampilan yang original dan menarik</h3>
+                        <img src="./img/service3.svg" alt="service1" class="serv-mobile">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat tempora consequuntur
+                            aliquid quibusdam. Omnis corporis sequi totam, doloribus eaque ipsum maiores aspernatur
+                            quibusdam, obcaecati suscipit, veniam perspiciatis facere consequuntur?</p>
+                    </div>
+                    <img src="./img/service3.svg" alt="service1" class="serv-img">
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- end main -->
+
+    <!-- contact -->
+    <div class="container">
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="col">
+                <div class="colom col-tgh">
+                    <div class="form">
+                        <p>Nama</p>
+                        <input type="text" id="form" placeholder="Username...">
+                        <P>Email</P>
+                        <input type="text" id="form" placeholder="Email...">
+                        <p>Subject</p>
+                        <input type="text" id="form" placeholder="Subject...">
+                    </div>
+                </div>
+                <div class="col-kanan">
+                    <textarea class="textarea" placeholder="Tulis pesan anda disini..."></textarea>
+                    <button type="button" class="button">Kirim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            Made with <span style="color: #cecece;">&hearts;</span> Reihan Setya Abida
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
